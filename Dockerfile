@@ -1,4 +1,4 @@
-FROM arm32v7/gradle
+FROM gradle:latest
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 EXPOSE 1883/tcp
